@@ -11,6 +11,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          elevation: 0,
+          backgroundColor: Colors.white,
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
@@ -20,11 +22,12 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ),
-        body: RecipeCard(
-          title: 'My recipe',
-          rating: '4.9',
-          cookTime: '30 min',
-          thumbnailUrl: 'https://lh3.googleusercontent.com/ei5eF1LRFkkcekhjdR_8XgOqgdjpomf-rda_vvh7jIauCgLlEWORINSKMRR6I6iTcxxZL9riJwFqKMvK0ixS0xwnRHGMY4I5Zw=s360',
-        ));
+        // body: RecipeCard(
+        //   title: 'My recipe',
+        //   rating: '4.9',
+        //   cookTime: '30 min',
+        //   thumbnailUrl: 'https://lh3.googleusercontent.com/ei5eF1LRFkkcekhjdR_8XgOqgdjpomf-rda_vvh7jIauCgLlEWORINSKMRR6I6iTcxxZL9riJwFqKMvK0ixS0xwnRHGMY4I5Zw=s360',
+        // )
+    );
   }
 }
